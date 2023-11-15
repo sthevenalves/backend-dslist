@@ -6,7 +6,7 @@ import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
-//classe associativa // repository aceita somente um id
+
 
 @Entity
 @Table(name = "tb_belonging")
@@ -20,7 +20,6 @@ public class Belonging {
 	}
 
 	public Belonging(Game game, GameList list, Integer position) {
-		super();
 		id.setGame(game);
 		id.setList(list);
 		this.position = position;
